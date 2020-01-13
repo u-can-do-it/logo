@@ -1,0 +1,26 @@
+.video {
+  position: relative;
+
+  &__min {
+    @include rwd(phone) {
+      width: 290px;
+      height: auto;
+    }
+  }
+
+  &__button {
+    @include absCenter;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: $c-blue-bright;
+
+    &:hover {
+      transform: scale(1.05) translate(-50%, -50%);
+      transition: all 0.3s;
+    }
+    &:active {
+      transform: scale(0.95) translate(-50%, -50%);
+    }
+  }
+}

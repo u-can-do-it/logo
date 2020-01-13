@@ -1,0 +1,85 @@
+.footer {
+  background-image: linear-gradient(#3847b5, #253194);
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 25px;
+
+  &__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    @include rwd(phone) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 61px;
+    }
+  }
+
+  &__logo {
+    @include rwd(phone) {
+      margin-bottom: 49px;
+    }
+  }
+
+  &__contact {
+    &--head {
+      font-size: 16px;
+      color: $c-white;
+      margin-bottom: 25px;
+
+      @include rwd(phone) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &--email {
+      font-size: 20px;
+      color: $c-blue-pure;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    &--text {
+      margin-top: 23px;
+      color: $c-white;
+      font-size: 15px;
+
+      @include rwd(phone) {
+        margin-top: 33px;
+      }
+    }
+  }
+
+  &__links {
+    color: $c-gray;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    flex-wrap: wrap;
+
+    @include rwd(phone) {
+      font-size: 13px;
+      margin-top: 60px;
+    }
+  }
+
+  &__link {
+    margin: 0 6px;
+
+    &:last-child {
+      @media screen and (max-width: 397px) {
+        margin-top: 27px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.delimiter:last-of-type {
+  @media screen and (max-width: 397px) {
+    opacity: 0;
+  }
+}

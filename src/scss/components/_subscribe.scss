@@ -1,0 +1,68 @@
+.subscribe {
+  &__text {
+    color: $c-white;
+    margin-bottom: 19px;
+    opacity: 0.7;
+  }
+
+  &__field {
+    display: flex;
+    margin: 0 auto;
+    @include rwd(phone) {
+      width: 290px;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    max-width: 480px;
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 999px;
+    padding: 12px 155px 13px 20px;
+    border: none;
+    display: inline-block;
+    outline: none;
+
+    @include rwd(phone) {
+      max-width: 290px;
+      padding: 12px 50px 13px 20px;
+    }
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    margin-left: -149px;
+
+    @include rwd(phone) {
+      width: 59px;
+      height: 51px;
+      padding: unset !important;
+      margin-right: -2px;
+    }
+
+    &--icon {
+      display: none;
+      margin-left: 25px;
+      @include rwd(phone) {
+        display: block;
+      }
+    }
+
+    &--text {
+      @include rwd(phone) {
+        display: none;
+      }
+    }
+  }
+
+  @include rwd(tab) {
+    margin-bottom: 60px;
+
+    &__field {
+      @include flex;
+    }
+  }
+}

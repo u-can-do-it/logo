@@ -1,0 +1,25 @@
+
+@import "./scss/abstracts/variables";
+@import "./scss/abstracts/mixins";
+
+@import "./scss/base/utils";
+@import "./scss/base/base";
+
+@import "./scss/layout/nav";
+@import "./scss/layout/header";
+@import "./scss/layout/footer";
+
+@import "./scss/components/team";
+@import "./scss/components/countdown";
+@import "./scss/components/subscribe";
+@import "./scss/components/card";
+@import "./scss/components/button";
+@import "./scss/components/modal";
+@import "./scss/components/player";
+@import "./scss/components/socials";
+@import "./scss/components/video";
+@import "./scss/components/delimiter";
+
+//bootstrap
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./scss/components/carousel";

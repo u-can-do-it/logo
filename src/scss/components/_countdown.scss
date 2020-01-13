@@ -1,0 +1,61 @@
+.countdown {
+  opacity: 0;
+  transition: all 1s reverse;
+
+  &__visible {
+    opacity: 1;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__timer {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    justify-content: space-between;
+
+    @include rwd(tab) {
+      margin: 0 auto;
+    }
+  }
+
+  &__digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 49px;
+    border-radius: 5px;
+    border: solid $c-blue-border 1px;
+    position: relative;
+    size: 25px;
+    color: white;
+
+    @include rwd(phone) {
+      width: 54px;
+      height: 32px;
+    }
+  }
+
+  &__dots {
+    color: $c-blue-border;
+    font-size: 18px;
+    vertical-align: center;
+    line-height: 46px;
+    transition: all 0.2s ease-out;
+
+    @include rwd(phone) {
+      line-height: 30px;
+    }
+
+    &--hidden {
+      opacity: 0;
+    }
+  }
+
+  &__title {
+    color: #38a5db;
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  background-color: $c-blue-bright;
+  cursor: pointer;
+  padding: 12px 40px 13px;
+  border: none;
+  border-image: none;
+  border-radius: 999px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+
+  color: $c-white;
+}

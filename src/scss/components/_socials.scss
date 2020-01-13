@@ -1,0 +1,9 @@
+.socials {
+  &__list {
+    max-width: 262px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}

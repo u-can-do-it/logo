@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: unset;
+}
+
+button {
+  cursor: pointer;
+  color: unset;
+  border: none;
+  border-image: none;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+p {
+  size: 17px;
+
+  color: #576472;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 41px;
+  @include rwd(phone) {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}

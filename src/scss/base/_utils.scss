@@ -1,0 +1,36 @@
+.u-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1171px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 14px 0 15px;
+  }
+}
+
+.u-m-center {
+  margin: 0 auto;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.text-blue {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(56, 165, 219, 1);
+}

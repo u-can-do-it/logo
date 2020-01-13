@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+
+  @include rwd(phone) {
+    height: 59px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 96px;
+    height: 38px;
+    margin-top: 10px;
+
+    @include rwd(phone) {
+      width: 70px;
+      height: 28px;
+      margin-top: 17px;
+    }
+  }
+
+  &__list {
+    margin-top: 22px;
+    width: 100%;
+    max-width: 225px;
+    display: flex;
+    justify-content: space-between;
+
+    @include rwd(phone) {
+      display: none;
+    }
+
+    & li {
+      display: inline;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: $c-blue;
+  }
+}

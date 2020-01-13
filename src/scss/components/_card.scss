@@ -1,0 +1,50 @@
+.person-card {
+  width: 270px;
+  height: 380px;
+  text-align: center;
+  margin: 0 auto;
+
+  &__img {
+    width: 135px;
+    height: 136px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $c-blue-pure;
+    font-weight: normal;
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  &__text {
+    width: 270px;
+    height: 120px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 29px;
+    font-size: 17px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon-box {
+    border: 1px solid $c-gray;
+    border-radius: 3px;
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  &__icon {
+    padding: 2px 15px;
+  }
+}
