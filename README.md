@@ -2,8 +2,6 @@
 
 ### [Live](https://u-can-do-it.github.io/logo/)
 
-### Logo Page
-
 ### Tech stack
 
 - Html
