@@ -11,7 +11,7 @@
 
 ### Available scripts
 
-#### To run the app locally:
+#### Run the app locally:
 
 Clone project and use command:
 
