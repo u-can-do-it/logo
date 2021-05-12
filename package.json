@@ -33,6 +33,6 @@
     "bootstrap": "^4.4.1",
     "clean-webpack-plugin": "^2.0.0",
     "micromodal": "^0.4.2",
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   }
 }
